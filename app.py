@@ -12,7 +12,7 @@ def home():
     # Create cursor
     cursor = conn.cursor()
     cursor.execute("SELECT * FROM students;")
-    rows = cursor.fetchone()
+    rows = cursor.fetchall()
     cursor.close()
     conn.close()
 
